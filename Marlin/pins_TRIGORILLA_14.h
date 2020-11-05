@@ -31,16 +31,19 @@
 #define LARGE_FLASH        true
 
 // Misc PINs
-#define BUZZER 			   31
+#define BUZZER             31
 #define SDPOWER            -1
 #define SDSS               53
 #define LED_PIN            13
 #define Z_MIN_PROBE_PIN     2
-#define FIL_RUNOUT_PIN	   19
+#define FIL_RUNOUT_PIN     19
+
+#define PS_ON_PIN          45
+#define CASE_LIGHT_PIN     45
 
 #ifdef OutageTest
-	#define OUTAGETEST_PIN  79
-	#define OUTAGECON_PIN   58
+	#define OUTAGETEST_PIN   79
+	#define OUTAGECON_PIN    58
 #endif
 
 // Steppers
@@ -85,7 +88,7 @@
 
 // Heaters
 #define HEATER_0_PIN       10
-#define HEATER_1_PIN       45
+#define HEATER_1_PIN       -1
 #define HEATER_BED_PIN      8
 
 // Temperatursensoren
